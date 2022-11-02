@@ -1,0 +1,39 @@
+.demo-table {
+  width: 75%;
+  margin-left: 150px;
+  margin-top: 25px;
+}
+
+.mat-row .mat-cell {
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+  cursor: pointer;
+}
+
+.mat-row:hover .mat-cell {
+  border-color: currentColor;
+}
+.top-content {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 150px;
+  margin-top: 55px;
+}
+.heading {
+  font: normal normal bold 22px/25px Roboto;
+  letter-spacing: 0px;
+  color: #42515f;
+  opacity: 1;
+}
+
+.add {
+  background: #008cff 0% 0% no-repeat padding-box;
+  font: normal normal normal 15px/40px Roboto;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-right: 170px;
+}
+th {
+  color: #658292;
+  background-color: #f7f7f7;
+}

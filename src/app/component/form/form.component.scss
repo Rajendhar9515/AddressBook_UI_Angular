@@ -1,0 +1,42 @@
+.form-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  transition: 0.3s;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  vertical-align: middle;
+}
+.example-full-width {
+  width: 600px;
+}
+
+.selected-data {
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  width: 100px;
+  height: 39px;
+  margin-right: 25px;
+}
+.group-button {
+  display: flex;
+  justify-content: end;
+}
+.header {
+  margin-left: 314px;
+  width: 47%;
+  background-color: #008cff;
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}

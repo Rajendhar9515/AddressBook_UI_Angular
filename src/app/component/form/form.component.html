@@ -1,0 +1,69 @@
+<app-header></app-header>
+<div>
+  <div class="header">PERSON ADDRESS FORM</div>
+  <div class="form-card">
+    <form action="" [formGroup]="addressData">
+      <div>
+        <label for="">fullName</label>
+        <form class="example-form">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <input matInput formControlName="fullName" />
+          </mat-form-field>
+        </form>
+      </div>
+      <div>
+        <label for="">Phone Number</label>
+        <form class="example-form">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <input type="number" matInput formControlName="phoneNumber" />
+          </mat-form-field>
+        </form>
+      </div>
+      <div>
+        <label for="">Address</label>
+        <form class="example-form">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <input matInput formControlName="address" />
+          </mat-form-field>
+        </form>
+      </div>
+      <div class="selected-data">
+        <div>
+          <p>City</p>
+          <mat-form-field appearance="outline">
+            <mat-label>Select City</mat-label>
+            <mat-select formControlName="city">
+              <mat-option *ngFor="let city of citys" [value]="city">
+                {{ city }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div>
+          <p>State</p>
+          <mat-form-field appearance="outline">
+            <mat-label>Select State</mat-label>
+            <mat-select formControlName="state">
+              <mat-option *ngFor="let state of states" [value]="state">
+                {{ state }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div>
+          <p>Zip Code</p>
+          <form class="example-form">
+            <mat-form-field appearance="outline">
+              <mat-label>Enter ZipCode</mat-label>
+              <input type="number" matInput formControlName="zip" />
+            </mat-form-field>
+          </form>
+        </div>
+      </div>
+      <div class="group-button">
+        <button mat-stroked-button (click)="saveData()">Add</button>
+        <button mat-stroked-button>Reset</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+.header {
+  font: normal normal bold 16px/18px Montserrat;
+  text-transform: uppercase;
+  margin-left: 145px;
+  width: 32px;
+  &-body {
+    display: flex;
+
+    margin-top: 40px;
+    &-text {
+      color: #008cff;
+      margin: 0;
+    }
+    &-book {
+      color: #42515f;
+    }
+    img {
+      width: 32px;
+    }
+  }
+}
